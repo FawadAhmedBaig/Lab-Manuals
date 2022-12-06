@@ -1,0 +1,9 @@
+#include <iostream>
+using namespace std;
+int main(int argc, char** argv) {
+	char str[40];
+	cout<<"Enter your name plz : ";
+	cin.getline(str,40);
+    cout<<"Your name is : "<<str;
+	return 0;
+}
