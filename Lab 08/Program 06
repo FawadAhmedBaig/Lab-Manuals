@@ -1,0 +1,50 @@
+#include <iostream>
+using namespace std;
+int main(int argc, char *argv[])
+{
+	int val , temp , loc = -1, arr[8];
+    char a;
+	for(int i = 0 ; i < 8 ; i++)
+	{
+		cin>>arr[i];
+	}
+	cout<<"Please enter A for ascending or D for descnding : ";
+	cin>>a;
+	if(a=='A')
+	{
+	for(int i = 0 ; i < 8 ; i++)
+	{
+	  for(int j = i ; j < 8 ; j++)
+       {
+       	if(arr[j]<arr[i])
+       	{
+       		temp = arr[j];
+       		arr[j] = arr[i];
+       		arr[i] = temp;
+       	}
+       }
+	}
+    }
+    else
+    {
+	for(int i = 0 ; i < 8 ; i++)
+	{
+	  for(int j = i ; j < 8 ; j++)
+       {
+       	if(arr[j]>arr[i])
+       	{
+       		temp = arr[j];
+       		arr[j] = arr[i];
+       		arr[i] = temp;
+       	}
+       }
+	}
+    }
+    
+	 for(int i = 0 ; i < 8 ; i++)
+	 {
+	 	cout<<arr[i]<<" ";
+	 }
+
+return 0;
+}
