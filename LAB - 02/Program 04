@@ -1,0 +1,20 @@
+#include <iostream>
+#indlude <conio.h>
+using namespace std;
+int main ()
+{
+int a;
+char b;
+float c;
+long int d;
+bool e;
+
+cout<<"The number of bytes occupied by Integer data type is      : "<<sizeof(a)<<endl;
+cout<<"The number of bytes occupied by Character data type is    : "<<sizeof(b)<<endl;
+cout<<"The number of bytes occupied by Floating data type is     : "<<sizeof(c)<<endl;
+cout<<"The number of bytes occupied by Long Integer data type is : "<<sizeof(d)<<endl;
+cout<<"The number of bytes occupied by Boolean data type is      : "<<sizeof(e)<<endl;
+
+return 0;
+}
+
