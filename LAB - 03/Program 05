@@ -1,0 +1,14 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+ float s, v , t = 0 ;
+ cout<<"Enter the distance travelled in miles : ";
+ cin>>s;
+ cout<<"Enter the speed in miles per hour : ";
+ cin>>v;
+ t = s/v;
+ cout<<"The time is : "<<t;
+	
+	return 0;
+}
