@@ -1,0 +1,12 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+ float a,b;
+ cout<<"Enter the 1st number : ";
+ cin>>a;
+ cout<<"Enter the 2nd number: ";
+ cin>>b;
+ (b==a*a)? cout<<"2nd number is the square of 1st num" : cout<<"2nd number is not the square of 1st num" ;
+return 0;
+}
