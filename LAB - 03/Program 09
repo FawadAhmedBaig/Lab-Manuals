@@ -1,0 +1,11 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+ float w;
+ cout<<"Enter the weight in poubds : ";
+ cin>>w;
+ cout<<"The weight in kilograms is : ";
+ cout<<w*0.453592;
+return 0;
+}
