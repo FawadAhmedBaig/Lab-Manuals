@@ -1,0 +1,19 @@
+#include <iostream>
+#include <conio.h>
+using namespace std;
+
+int main() {
+	int a , b ;
+	cout<<"Enter the 1st number : ";
+	cin>>a;
+	cout<<"Enter the 2nd number : ";
+	cin>>b;
+	float c = int(a);
+	float d = int(b);
+	cout<<"The addition is       : "<<c+d<<endl;
+	cout<<"The subtraction is    : "<<c-d<<endl;
+	cout<<"The multiplication is : "<<c*d<<endl;
+	cout<<"The division is       : "<<c/d<<endl;
+	
+	return 0;
+}
