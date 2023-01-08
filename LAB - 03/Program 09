@@ -1,0 +1,11 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+ float a;
+ cout<<"Enter the age in years : ";
+ cin>>a;
+ cout<<"The age in months is : ";
+ cout<<a*12;
+return 0;
+}
