@@ -1,0 +1,16 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+ int s, g;
+ cout<<"Enter your salary : ";
+ cin>>s;
+ cout<<"Enter your grade : ";
+ cin>>g;
+ 
+ if (g>15)
+ cout<<"The total salary is : "<<s+s*50/100;
+ else
+ cout<<"The total salary is : "<<s+s*25/100;
+ 
+return 0;
