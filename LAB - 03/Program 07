@@ -1,0 +1,11 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+ float t;
+ cout<<"Enter the temperature in celcius : ";
+ cin>>t;
+ cout<<"The temperature in farenheit is : ";
+ cout<<  9 * t / 5  + 32;
+return 0;
+}
