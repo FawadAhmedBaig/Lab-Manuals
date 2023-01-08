@@ -1,0 +1,13 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+ float h;
+ cout<<"Enter the height in inches : ";
+ cin>>h;
+ 
+ cout<<"The height in foot & centimeters is : ";
+ cout<<h*0.08333<<" foots"<<endl;
+ cout<<h*2.54<<" cms";
+	return 0;
+}
