@@ -1,0 +1,12 @@
+#include <iostream>
+#define Pi 3.1416
+using namespace std;
+int main ()
+{
+ float r, A ;
+ cout<<"Enter the radius of the sphere : ";
+ cin>>r;
+ A=4*Pi*r*r;
+ cout<<"The area of the sphere is : "<<A;
+return 0;
+}
