@@ -1,0 +1,30 @@
+#include <iostream>
+using namespace std;
+struct sd
+{
+ char roll_no[20];
+ float marks[5];
+};
+int main() {
+sd s1;
+float sum=0;
+cout<<"Enter your roll number : ";
+cin>>s1.roll_no;
+cout<<"Enter your marks in 5 subjects. \n";
+for(int i = 0 ; i<5 ; i++)
+{
+	cout<<"Enter your marks in subject "<<i+1<<" : ";
+	cin>>s1.marks[i];
+	sum +=s1.marks[i];
+}
+   float avg = sum/5;
+   cout<<"Your roll number is    : ";
+   cout<<s1.roll_no<<endl; 
+   cout<<"Your total marks are   : ";
+   cout<<sum<<endl;
+   cout<<"Your average marks are : ";
+   cout<<avg;
+   
+   
+   return 0;
+}
