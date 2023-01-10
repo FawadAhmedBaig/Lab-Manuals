@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+struct bd
+{
+ int day;
+ int month;
+ int year;
+};
+int main() {
+ bd b1;
+ cout<<"Enter the no. of day   : ";
+ cin>>b1.day;
+ cout<<"Enter the no. of month : ";
+ cin>>b1.month;
+ cout<<"Enter the no. of year  : ";
+ cin>>b1.year;
+
+ cout<<"Birthday : ";
+ cout<<b1.day<<" / "<<b1.month<<" / "<<b1.year;
+
+   return 0;
+}
