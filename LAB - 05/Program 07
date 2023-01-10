@@ -1,0 +1,88 @@
+#include <iostream>
+#define Pi 3.1416
+using namespace std;
+
+int main() {
+int a,b,c,w,l,A,r,h,B;
+float d;
+char ch;
+cout<<"		Main Menu\n";
+cout<<"1. Calculate Area\n";
+cout<<"2. Calculate Volume\n";
+cin>>a;
+switch(a)
+{
+	
+
+
+case 1 :
+	{
+	cout<<"a. Rectangle (width * length)\n";
+	cout<<"b. Circle (pi * r * r)\n";
+    cout<<"c. Triangle ((height*base)/2)\n";
+	cin>>ch;
+	switch(ch)
+	{
+		case 'a':
+			{
+			cout<<"Enter the width of rectangle : ";
+			cin>>w;
+			cout<<"Enter the length of rectangle : ";
+			cin>>l;
+			A = (w*l);
+			cout<<"The Area of rectangle is : "<<A;
+			break;
+			}
+		case 'b':	
+		    {
+			cout<<"Enter the radius of the circle : ";
+		    cin>>r;
+		    A = (Pi*r*r);
+		    cout<<"The Area of circle is : "<<A;
+		    break;
+		    }
+		case 'c':
+		    {
+		    cout<<"Enter the height of triangle : ";
+		    cin>>h;
+		    cout<<"Enter the base of triangle : ";
+		    cin>>B;
+		    A = (h*B)/2;
+		    cout<<"The Area of triangle is : "<<A;
+		    break;
+		    }
+		break;    
+	}
+case 2 :
+	{
+	cout<<"-----Volume Menu-----\n";
+    cout<<"a. Cylinder (pi * r * r * height)\n";   
+    cout<<"b. Sphere ((4/3) * pi * r * r * r)\n";
+    cin>>ch;
+    switch(ch)
+    {
+    	case'a':
+    		{
+    		cout<<"Enter the radius of the cylinder : ";
+    		cin>>r;
+    		cout<<"Enter the height of the cylinder : ";
+    		cin>>h;
+    		A = (Pi * r * r * h);
+    		cout<<"The are of Cylinder is : "<<A;
+    		break;
+    	    }
+    	case 'b':
+		    {
+		    	cout<<"Enter the radius of the sphere : ";
+		    	cin>>r;
+		    	A = ((4/3) * Pi * r * r * r);
+		    	cout<<"The area of the sphere is : "<<A;
+		    	break;
+			}
+			break;  
+	}
+  }
+}
+}
+return 0;
+}
