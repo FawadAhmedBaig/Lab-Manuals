@@ -1,0 +1,71 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+int a,b,c;
+float d;
+cout<<"Enter 1 ? To Find Largest Number Among Three Variables\n";
+cout<<"Enter 2 ? To Find ODD or EVEN\n";
+cout<<"Enter 3 ? To Find State of Water\n";
+cout<<"Enter 4 ? To find Grade of Student\n";
+cin>>a;
+switch(a)
+{
+	
+case 1 :
+	{
+	cout<<"Enter 1st number : ";
+	cin>>a;
+	cout<<"Enter 2nd number : ";
+	cin>>b;
+    cout<<"Enter 3rd number : ";
+	cin>>c;
+	if(a>b && a>c)
+	cout<<a<<" is the largest.";
+	else if (b>a && b>c)
+    cout<<b<<" is the largest.";
+    else 
+    cout<<c<<" is the largest.";
+    break;
+    }
+case 2 :
+    {
+    cout<<"Enter a number : ";
+    cin>>a;
+    if(a%2==0)
+    cout<<"Even";
+    else 
+    cout<<"Odd";
+    break;
+    }
+case 3 :
+    {
+     cout<<"Enter the temperature ";
+     cin>>d;
+     if(d<0)
+     cout<<"ICE";
+     else if (d>0 && d<100)
+     cout<<"WATER";
+     else
+     cout<<"STEAM";
+     break;
+	}    
+case 4 :
+	{
+	 cout<<"Enter your marks : ";
+	 cin>>d;
+	 if(d>=90 && d<=100)
+	 cout<<"You got A grade.";
+	 else if(d>=80)
+	 cout<<"You got B grade.";
+	 else if(d>=70)
+	 cout<<"You got C grade.";
+	 else if(d>=60)
+	 cout<<"You got D grade.";
+	 else if (d<60 && d>0)
+	 cout<<"You got F grade.";
+	 break;
+	}
+}
+return 0;
+}
