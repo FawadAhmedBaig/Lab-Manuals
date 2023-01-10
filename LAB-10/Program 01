@@ -1,0 +1,32 @@
+#include <iostream>
+using namespace std;
+struct student
+{
+ char roll_no [20];
+ float marks;
+ float avg;
+ char grade[3];
+};
+int main() {
+ student S1;
+ cout<<"Enter your roll no. : ";
+ cin.getline(S1.roll_no,20);
+ cout<<"Enter your marks : ";
+ cin>>S1.marks;
+ cout<<"Enter your avg marks : ";
+ cin>>S1.avg;
+ cin.ignore();
+ cout<<"Enter your grade : ";
+ cin.getline(S1.grade,3);
+
+ cout<<"Your roll no. : ";
+ cout<<S1.roll_no;
+ cout<<"\nYour marks : ";
+ cout<<S1.marks;
+ cout<<"\nYour avg marks : ";
+ cout<<S1.avg;
+ cout<<"\nYour grade : ";
+ cout<<S1.grade;
+
+   return 0;
+}
