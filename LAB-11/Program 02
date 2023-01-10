@@ -1,0 +1,29 @@
+#include <iostream>
+using namespace std;
+union Player
+{
+	int h;
+	int w;
+};
+int main() {
+	Player P[3];
+	
+	for(int i = 0 ; i<3 ;i++)
+    {
+    	cout<<"Enter the Player "<<i+1<<" Height   : ";
+    	cin>>P[i].h;
+    	cout<<"Enter the Player "<<i+1<<" Weight  :";
+        cin>>P[i].w;
+	}	
+	
+	for(int i = 0 ; i<3 ;i++)
+    {
+    	cout<<"The Height of Player "<<i+1<<" is   :";
+    	cout<<P[i].h;
+    	cout<<"\nThe Weight of Player "<<i+1<<" is  :";
+        cout<<P[i].w;
+    	cout<<endl;
+	}
+	
+	return 0;
+}
