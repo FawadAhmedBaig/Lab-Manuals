@@ -1,0 +1,12 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	int i = 0;
+	loop:
+    cout<<"Fawad Baig\n";
+    i++;
+    if(i<3)
+	goto loop;
+	return 0;
+}
