@@ -1,0 +1,21 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+    int n,a, max=0, min=32767;
+    cout<<"Enter the inputs you want : ";
+    cin>>a;
+    for(int i ; i<a ; i++)
+    {
+        cout<<"Enter number : ";
+        cin>>n;
+
+        if(n>max)
+            max=n;
+        if(n<min)
+            min=n;
+    }
+    cout<<"Maximum Number :"<<max<<"\nMinimum Number :"<<min;
+
+    return 0;
+}
