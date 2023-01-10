@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+int main() {
+int arr[2][7];
+   cout<<"Enter all temperature for a week of first city and then second city.\n";
+  for(int i = 0 ; i<2 ; i++)
+  {
+  	for(int j=0 ; j < 7 ; j++)
+  	{
+  		cout<<"City "<<i+1<<", Day "<<j+1<<" : ";
+  		cin>>arr[i][j];
+	}
+	cout<<endl;
+  }
+	
+   return 0;
+}
