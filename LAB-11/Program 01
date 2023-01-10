@@ -1,0 +1,42 @@
+#include <iostream>
+using namespace std;
+struct Book
+{
+	int BookID;
+	char bookname[30];
+	float price;
+};
+struct Order
+{
+	int OrderID;
+	Book B1[4];
+};
+int main() {
+	Order O1;
+	cout<<"Enter the order ID : ";
+	cin>>O1.OrderID;
+	for(int i = 0 ; i<4 ;i++)
+    {
+    	cout<<"Enter the Book "<<i+1<<" ID   : ";
+    	cin>>O1.B1[i].BookID;
+    	cout<<"Enter the Book "<<i+1<<" Name  :";
+    	cin.ignore();
+    	cin.getline(O1.B1[i].bookname,30);
+    	cout<<"Enter the Book "<<i+1<<" Price :";
+    	cin>>O1.B1[i].price;
+    	cout<<endl;
+	}	
+	for(int i = 0 ; i<4 ;i++)
+    {
+    	cout<<"The Book "<<i+1<<" ID is   :";
+    	cout<<O1.B1[i].BookID;
+    	cout<<"\nThe Book "<<i+1<<" Name is  :";
+    	cout<<O1.B1[i].bookname;
+    	cout<<"\nThe Book "<<i+1<<" Price is :";
+    	cout<<O1.B1[i].price;
+    	cout<<endl;
+	}	
+	
+	
+	return 0;
+}
