@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	char a;
+	cout<<"Enter a letter : ";
+	cin>>a;
+	if(a>='A')
+	 {
+	 	if(a<='Z')
+	 	cout<<"Capital Letters.";
+	 	else 
+	    cout<<"Small letters.";
+	 }
+	
+	return 0;
+}
