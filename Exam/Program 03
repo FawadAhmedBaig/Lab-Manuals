@@ -1,0 +1,52 @@
+#include <iostream>
+using namespace std;
+
+	int main() {
+    int arr[10] , temp , val, mid ,loc = -1, s = 0 , e = 9 ;
+    for(int i = 0; i<10 ; i++)
+    {
+    	cout<<"Enter the value at index "<<i<<" : ";
+    	cin>>arr[i];
+	}
+    for(int i = 0 ; i<10 ; i++)
+    {
+    	for(int j = 0 ; j < 10 ; j++)
+    	{
+    		if(arr[j]>arr[j+1])
+			{
+				temp = arr[j];
+				arr[j] = arr[j+1];
+				arr[j+1] = temp;
+			}
+		}
+	}
+    for(int i = 0; i<10 ; i++)
+    {
+    	cout<<arr[i]<<" ";
+	}
+    cout<<"Enter A value to search : ";
+    cin>>val;
+    while(s<=e)
+    {
+    	mid = (s+e)/2;
+    	if(val==arr[mid])
+    	{
+    		loc = mid;
+    		break;
+		}
+		else if(val<arr[mid])
+		{
+			e = mid -1;
+		}
+		else
+		{
+			s = mid+1;
+		}
+	}
+    if(loc == -1)
+    cout<<"Value not found.";
+    else
+    cout<<val<<" found at index : "<<loc;
+
+	return 0;
+}
