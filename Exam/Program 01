@@ -1,0 +1,26 @@
+#include <iostream>
+using namespace std;
+	struct Car{
+		int car_num;
+		char cnic[30];
+		int car_model;
+		int kms_run;
+	};
+	int main() {
+	Car C[5];
+	for(int i = 0 ; i<5 ; i++)
+	{
+		cout<<"Enter the car number of Car "<<i+1<<" : ";
+		cin>>C[i].car_num;
+		cout<<"Enter the owner cnic number of Car "<<i+1<<" : ";
+		cin.ignore();
+		cin.getline(C[i].cnic, 30);
+		cout<<"Enter the model number of Car "<<i+1<<" : ";
+		cin>>C[i].car_model;
+		cout<<"Enter the kms-run of Car "<<i+1<<" : ";
+		cin>>C[i].kms_run;
+		cout<<endl;
+	}
+	
+	return 0;
+}
