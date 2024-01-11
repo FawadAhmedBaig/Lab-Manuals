@@ -6,7 +6,7 @@ using namespace std;
 		int car_model;
 		int kms_run;
 	};
-	int main() {
+	int main() {//sdfasdf
 	Car C[5];
 	for(int i = 0 ; i<5 ; i++)
 	{
